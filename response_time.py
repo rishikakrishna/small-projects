@@ -38,10 +38,10 @@ if time_period in time_dict:
         current = (current + float(attempt))/2
         messages += 1
         
-    print("To activate the green, 'Very Responsive' badge on your Facebook Page,")
+    print("To activate the 'Very Responsive' badge on your Facebook Page,")
     print("respond to the next", messages, "messages")
     print("in or under", float(attempt), "minutes.")
 
 else:
-    print("Sorry, I don't understant your units :(")
+    print("Sorry, I don't understand your units :(")
 
