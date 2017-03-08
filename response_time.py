@@ -43,5 +43,5 @@ if time_period in time_dict:
     print("in or under", int(attempt), "minutes.")
 
 else:
-    print("None")
+    print("Sorry, I don't understant your units :(")
 
