@@ -35,14 +35,12 @@ else:
 
 time_period = time_period.lower()  
 
-if time_period in time_dict:
-    current = float(current) * time_dict[time_period]
-    messages = 0
-    while current > 15:
-        current = (current + float(attempt))/2
-        messages += 1
+current = float(current) * time_dict[time_period]
+messages = 0
+while current > 15:
+    current = (current + float(attempt))/2
+    messages += 1
         
-    print("To activate the 'Very Responsive' badge on your Facebook Page,")
-    print("respond to the next", messages, "messages")
-    print("in or under", float(attempt), "minutes.")
-
+print("To activate the 'Very Responsive' badge on your Facebook Page,")
+print("respond to the next", messages, "messages")
+print("in or under", float(attempt), "minutes.")
