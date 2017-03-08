@@ -27,6 +27,7 @@ def unfollow(following_file,followers_file):
     for line in followers_file:
         followers.append(line.strip())
 
+    print("These users do not follow you back:")
     for user in following:
         if user not in followers:
             print(user)
