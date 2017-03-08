@@ -1,3 +1,18 @@
+"""
+    Facebook Pages offer users insight into the response time.
+    If administrators are responding to messages under 15 minutes,
+    a green badge appears on the Facebook Page and indicates
+    
+    args:
+        current: input string indicating the numerical value of the current response time
+        time_period: input string, adding a unit to "current"
+        attempt: the response rate at which you are willing to respond to messages to bring your response time down to 15 minutes
+
+    prints:
+        the number of messages you must respond to within your specified response time ("attmpt")
+"""
+
+
 current = input("What is your current response time (just the numerical value)?  ")
 time_period = input("Is this in minutes, hours, days, weeks, months, or years?  ")
 attempt = input("How quickly are you currently able to respond to messages (in minutes)?  ")
