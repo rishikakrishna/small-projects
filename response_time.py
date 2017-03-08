@@ -11,14 +11,8 @@
     prints:
         the number of messages you must respond to within your specified response time ("attmpt")
 """
-
-
-current = input("What is your current response time (just the numerical value)?  ")
-time_period = input("Is this in minutes, hours, days, weeks, months, or years?  ")
-attempt = input("How quickly are you currently able to respond to messages (in minutes)?  ")
-print("")
-
-time_dict = {'minutes'  : 1,
+time_dict = {'minute'   : 1,
+             'minutes'  : 1,
              'hour'     : 60,
              'hours'    : 60,
              'day'      : 1440,
@@ -29,8 +23,18 @@ time_dict = {'minutes'  : 1,
              'months'   : 43805,
              'year'     : 525600,
              'years'    : 525600
-                                        }
+                                 }
+
+current = input("What is your current response time (just the numerical value)?  ")
+time_period = input("Is this in minutes, hours, days, weeks, months, or years?  ")
+if time_period in time_dict:
+    attempt = input("How quickly are you currently able to respond to messages (in minutes)?  ")
+    print("")
+else:
+    print("Sorry, I don't understand your units :(")
+
 time_period = time_period.lower()  
+
 if time_period in time_dict:
     current = float(current) * time_dict[time_period]
     messages = 0
@@ -41,7 +45,4 @@ if time_period in time_dict:
     print("To activate the 'Very Responsive' badge on your Facebook Page,")
     print("respond to the next", messages, "messages")
     print("in or under", float(attempt), "minutes.")
-
-else:
-    print("Sorry, I don't understand your units :(")
 
