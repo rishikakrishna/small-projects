@@ -40,7 +40,7 @@ if time_period in time_dict:
         
     print("To activate the green, 'Very Responsive' badge on your Facebook Page,")
     print("respond to the next", messages, "messages")
-    print("in or under", int(attempt), "minutes.")
+    print("in or under", float(attempt), "minutes.")
 
 else:
     print("Sorry, I don't understant your units :(")
