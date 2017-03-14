@@ -28,7 +28,7 @@ time_dict = {'minute'   : 1,
 current = input("What is your current response time (just the numerical value)?  ")
 time_period = input("Is this in minutes, hours, days, weeks, months, or years?  ")
 if time_period in time_dict:
-    attempt = input("How quickly are you currently able to respond to messages (in minutes)?  ")
+    attempt = input("How quickly are you currently able to respond to messages (in x > 0 minutes)?  ")
     print("")
 else:
     print("Sorry, I don't understand your units :(")
